@@ -1,4 +1,4 @@
-/*Jorge gabriel Alvarenga Britez
+/*Jorge Gabriel Alvarenga Britez
 Ejercicio 2*/
 /*
 Debemos lograr tomar un nombre con 'prompt' 
