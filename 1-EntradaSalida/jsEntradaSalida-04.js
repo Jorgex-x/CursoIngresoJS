@@ -1,3 +1,5 @@
+/*Jorge Gabriel Alvarenga Britez
+Ejercicio 3*/
 /* 
 Debemos lograr tomar un dato por 'PROMPT' 
 y lo muestro por 'ID' al presionar el botón 'mostrar'
