@@ -58,7 +58,7 @@ function Materiales ()
 
     calTotal = area * cal;
 
-    alert("Se usaran " + cementoTotal + " bolsas de cemento " + "y " + calTotal + " bolsas de cal")
+    alert("Se usaran " + cementoTotal + " bolsas de cemento " + "y " + calTotal + " bolsas de cal");
 
     
 }
