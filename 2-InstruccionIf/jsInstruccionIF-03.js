@@ -12,7 +12,7 @@ function mostrar()
 	}
 
 	else{
-		alert ("Es menor de edad")
+		alert ("Es menor de edad");
 	}
 
 }//FIN DE LA FUNCIÓN

@@ -30,9 +30,9 @@ function Circulo ()
 
     radio = parseFloat(document.getElementById("txtIdRadio").value);
 
-    perimetro = 2 * pi * radio
+    perimetro = 2 * pi * radio;
 
-    alambre = perimetro * 3
+    alambre = perimetro * 3;
 
 
 
@@ -43,10 +43,10 @@ function Materiales ()
 	let largo;
     let ancho;
     let area;
-    let cementoTotal
-    let calTotal
-    const cemento = 2
-    const cal = 3
+    let cementoTotal;
+    let calTotal;
+    const cemento = 2;
+    const cal = 3;
 
     largo = parseFloat(document.getElementById("txtIdLargo").value);
 
