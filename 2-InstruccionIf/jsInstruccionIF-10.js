@@ -1,3 +1,5 @@
+/*Jorge gabriel Alvarenga Britez
+if 10 */
 function mostrar()
 {
 

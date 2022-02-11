@@ -1,3 +1,5 @@
+/*Jorge gabriel Alvarenga Britez
+if 7 */
 function mostrar()
 {
 	let edad;
