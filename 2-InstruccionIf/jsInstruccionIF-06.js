@@ -1,5 +1,5 @@
 /*Jorge gabriel Alvarenga Britez
-if 4 */
+if 6 */
 
 function mostrar()
 {
@@ -18,7 +18,7 @@ function mostrar()
 		}
 		else{
 			if (edad >= 18){
-				alert("Es un adultos")
+				alert("Es un adultos");
 			}
 		}
 	}
