@@ -10,5 +10,92 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  */
 function CalcularPrecio () 
 {
+    let lamparasBajoConsumo
+    let marca
+    let descuento 
+    let porcentaje 
+    let precioSinDescuento
+    let precioFinal
+    let ingresoBrutos
+    let precioImpuesto
+    const precioLampara = 35;
+    
+
+    lamparasBajoConsumo = parseInt(document.getElementById("txtIdCantidad").value);
+
+    marca = document.getElementById("txtIdCantidad").value;
+
+    precioSinDescuento = lamparasBajoConsumo * precioLampara;
+
+
+    //Caso A
+    if(lamparasBajoConsumo >= 6){
+        porcentaje = 50;
+    }
+    else{//Caso B
+        if(lamparasBajoConsumo == 5){
+            if(marca == "ArgentinaLuz"){
+                porcentaje = 40
+            } 
+         else{
+                 porcentaje = 30
+
+            }    
+        }
+        else{//Caso C
+            if(lamparasBajoConsumo == 4){
+                if(marca == "ArgentinaLuz" || marca == "FelipeLamparas"){
+                    porcentaje = 25;
+                }
+             else{
+                     porcentaje = 20;
+
+                }
+            }
+            else{//Caso D
+                if(lamparasBajoConsumo == 3){
+                    if(marca == "ArgentinaLuz"){
+                    porcentaje == 15
+                    }
+                 else{
+                     if(marca == "FelipeLamparas"){
+                         porcentaje = 10;
+                        }
+                        else{
+                            porcentaje = 5;
+                        }
+                     
+                    }
+                } else {//Caso E
+                    if(precioFinal >= 120){
+
+                        ingresoBrutos = (precioFinal * 0.10);
+                        precioImpuesto = ingresoBrutos + precioFinal;
+                        alert ("IIBB Usted pago $" + precioImpuesto + "siendo $" + ingresoBrutos + " el impuesto que se pagó");
+
+
+                    }
+
+                }
+
+            }
+            
+        
+                
+        
+        }
+        
+        
+    }
+    
+    descuento = precioSinDescuento * porcentaje / 100;
+    
+    precioFinal = precioSinDescuento - descuento;
+
+    document.getElementById("txtIdprecioDescuento").value;
+    
+
+    
+
  	
 }
