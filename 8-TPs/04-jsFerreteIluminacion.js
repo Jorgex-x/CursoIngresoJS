@@ -10,92 +10,92 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  */
 function CalcularPrecio () 
 {
-    let lamparasBajoConsumo
-    let marca
-    let descuento 
-    let porcentaje 
-    let precioSinDescuento
-    let precioFinal
-    let ingresoBrutos
-    let precioImpuesto
-    const precioLampara = 35;
-    
-
-    lamparasBajoConsumo = parseInt(document.getElementById("txtIdCantidad").value);
-
-    marca = document.getElementById("txtIdCantidad").value;
-
-    precioSinDescuento = lamparasBajoConsumo * precioLampara;
+    let cantidadLamparita;
+    let precioLamparita; 
+    let descuento;
+    let precioSinDescuento;
+    let precioFinal;
+    let porcentaje;
+    let ingresoBrutos;
 
 
-    //Caso A
-    if(lamparasBajoConsumo >= 6){
+    //Ingreso por el ID
+    cantidadLamparita = document.getElementById("txtIdCantidad").value;
+    cantidadLamparita = parseInt(cantidadLamparita);
+
+    marca = document.getElementById("Marca");
+
+    precioLamparita = 35;
+
+    precioSinDescuento = cantidadLamparita * precioLamparita;
+
+    // Caso A
+    if (cantidadLamparita >= 6)
+    {
         porcentaje = 50;
     }
-    else{//Caso B
-        if(lamparasBajoConsumo == 5){
-            if(marca == "ArgentinaLuz"){
-                porcentaje = 40
-            } 
-         else{
-                 porcentaje = 30
-
-            }    
+    else
+    {
+        if (cantidadLamparita == 5) // Caso B
+        {
+            if (marca == "ArgentinaLuz")
+            {
+                porcentaje = 40;
+            }
+            else 
+            {
+                porcentaje = 30;
+            }
         }
-        else{//Caso C
-            if(lamparasBajoConsumo == 4){
-                if(marca == "ArgentinaLuz" || marca == "FelipeLamparas"){
+        else
+        {
+            if (cantidadLamparita == 4) // Caso C
+            {
+                if(marca == "ArgentinaLuz" || marca == "FelipeLamparas")
+                {
                     porcentaje = 25;
                 }
-             else{
-                     porcentaje = 20;
-
+                else
+                {
+                    porcentaje = 20;
                 }
             }
-            else{//Caso D
-                if(lamparasBajoConsumo == 3){
-                    if(marca == "ArgentinaLuz"){
-                    porcentaje == 15
+            else
+            {
+                if(cantidadLamparita == 3) // Caso D
+                {
+                    if(marca == "ArgentinaL")
+                    {
+                        porcentaje = 15;
                     }
-                 else{
-                     if(marca == "FelipeLamparas"){
-                         porcentaje = 10;
+                    else
+                    {
+                        if(marca == "FelipeLamparas")
+                        {
+                            porcentaje = 10;
                         }
-                        else{
+                        else
+                        {
                             porcentaje = 5;
                         }
-                     
                     }
-                } else {//Caso E
-                    if(precioFinal >= 120){
-
-                        ingresoBrutos = (precioFinal * 0.10);
-                        precioImpuesto = ingresoBrutos + precioFinal;
-                        alert ("IIBB Usted pago $" + precioImpuesto + "siendo $" + ingresoBrutos + " el impuesto que se pagó");
-
-
-                    }
-
                 }
-
+                else
+                {
+                    if (precioFinal > 120) // Case E
+                    {
+                        ingresoBrutos = 10;
+                        precioFinal = precioFinal + ingresoBrutos;
+                        alert("Usted pago X " + precioFinal + " dde IIBB")
+                    }
+                }
             }
-            
-        
-                
-        
         }
-        
-        
     }
-    
+
     descuento = precioSinDescuento * porcentaje / 100;
-    
     precioFinal = precioSinDescuento - descuento;
 
-    document.getElementById("txtIdprecioDescuento").value;
-    
 
-    
-
- 	
+    document.getElementById("txtIdprecioDescuento").value = precioFinal;
 }

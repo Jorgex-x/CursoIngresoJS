@@ -1,6 +1,24 @@
+/*Jorge gabriel Alvarenga Britez
+Switch 8 */
 function mostrar()
 {
-	var destinoIngresado =txtIdDestino.value;
-	alert(destinoIngresado);
+	let destino
+	
+	destino = document.getElementById("txtIdDestino").value; 
 
-}//FIN DE LA FUNCIÓN
+	switch(destino){
+		case "Bariloche":
+			alert("En el destino hace frio.");
+		break;
+		case "Cataratas":
+			alert("En el destino hace calor.");
+		break;
+		case "Mar del plata":
+			alert("En el destino hace calor.");
+		break;
+		case "Ushuaia":
+			alert("En el destino hace frio.");
+		break;
+		default:
+	}
+}
