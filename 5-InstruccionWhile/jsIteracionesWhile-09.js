@@ -13,7 +13,7 @@ function mostrar()
 	respuesta='si';
 	while(respuesta=="si")
 	{
-		
+	
 		respuesta=prompt("desea continuar?");
 	}
 	txtIdMaximo.value=numeroMaximo;

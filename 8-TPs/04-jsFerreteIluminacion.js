@@ -29,18 +29,14 @@ function CalcularPrecio ()
 
     precioSinDescuento = cantidadLamparita * precioLamparita;
 
-    // Caso A
+    // Caso A       
     if (cantidadLamparita >= 6)
     {
         porcentaje = 50;
     }
-    else
-    {
-        if (cantidadLamparita == 5) // Caso B
-        {
-            if (marca == "ArgentinaLuz")
-            {
-                porcentaje = 40;
+    //Caso B
+    if(cantidadLamparita == 5 && marca == "ArgentinaLuz"){
+        porcentaje = 40;
             }
             else 
             {
