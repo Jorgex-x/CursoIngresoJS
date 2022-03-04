@@ -1,8 +1,16 @@
+/*Jorge gabriel Alvarenga Britez
+for 3*/
 function mostrar()
 {
-
-	var repetciones = prompt("ingrese el número de repeticiones");
-	alert("ok");
+	let repetciones
+	
+	
+	repetciones = parseInt(prompt("ingrese el número de repeticiones"));
+	
+	for(i = 0 ; i < repetciones ; i++ )
+	
+	
+	alert("Hola UTN FRA");
 
 
 }//FIN DE LA FUNCIÓN

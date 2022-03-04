@@ -1,6 +1,18 @@
+/*Jorge gabriel Alvarenga Britez
+for 4*/
 function mostrar()
 {
-	alert("ok");
+	
+	for(i = 0 ; i < 5 ; i++){
+
+		alert(i);
+
+		if(i == 4){
+
+			break;
+		}
+	}
+	
 
 
 
